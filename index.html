@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home - Personal CV and Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Times New Roman, Times, serif;
+            background-color: #f5f5f5;
+            color: #333;
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #439ccf;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav h1 a {
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* MAIN */
+
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            padding: 80px 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        main h1 {
+            font-size: 42px;
+            color: #439ccf;
+            margin-bottom: 10px;
+        }
+
+        main h3 {
+            margin: 5px;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+
+
+        /* WELCOME BOX */
+
+        .welcome {
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 750px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #439ccf;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 40px;
+            margin-top: auto;
+        }
+
+        footer h6 {
+            font-size: 13px;
+            list-style: none;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PHONE - 375px */
+        @media (max-width: 767px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            .welcome {
+                padding: 30px 20px;
+                width: 100%;
+            }
+
+            main h1 {
+                font-size: 30px;
+            }
+
+            main h3 {
+                font-size: 17px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+
+        /* TABLET - 768px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            main {
+                padding: 50px 20px;
+            }
+
+            .welcome {
+                padding: 40px;
+                max-width: 700px;
+            }
+
+            main h1 {
+                font-size: 36px;
+            }
+        }
+
+
+        /* DESKTOP - 1024px AND BIGGER */
+        @media (min-width: 1024px) {
+
+            main {
+                max-width: 1100px;
+                padding: 80px 20px;
+            }
+
+            .welcome {
+                max-width: 750px;
+                padding: 50px;
+            }
+
+            main h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav>
+
+            <h1><a href="index.html">My Portfolio</a></h1>
+
+            <ul>
+
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="welcome">
+
+            <h1>Welcome to my website</h1>
+
+            <h3>Feel free to explore!</h3>
+
+            <h3>
+                Here you can find information about me,
+                read my CV and discover my interests <3 </h3>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h6>Copyright © 2026</h6>
+
+        <h6>362736@via.dk</h6>
+
+        <h6>Designed by Roseil Ali</h6>
+
+    </footer>
+
+
+</body>
+
+</html>

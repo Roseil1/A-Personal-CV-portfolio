@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Times New Roman, Times, serif;
+            background-color: #f5f5f5;
+            color: #333;
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #439ccf;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav h1 a {
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+        /* MAIN */
+
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        main h2 {
+            text-align: center;
+            color: #439ccf;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+
+        /* PROJECT GRID */
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+
+        /* PROJECT CARDS */
+
+        .project-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+        }
+
+        .project-card h3 {
+            color: #439ccf;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .project-card p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #439ccf;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 40px;
+            margin-top: auto;
+        }
+
+        footer h6 {
+
+            font-size: 13px;
+            list-style: none;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PHONE - 375px */
+        @media (max-width: 767px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            main h2 {
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                padding: 20px;
+            }
+
+            .project-card h3 {
+                font-size: 22px;
+            }
+
+            .project-card p {
+                font-size: 16px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+
+        /* TABLET - 768px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            main {
+                padding: 40px 20px;
+            }
+
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-card {
+                padding: 25px;
+            }
+        }
+
+
+        /* DESKTOP - 1024px AND BIGGER */
+        @media (min-width: 1024px) {
+
+            main {
+                max-width: 1100px;
+                padding: 60px 20px;
+            }
+
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-card {
+                padding: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav>
+
+            <h1><a href="index.html">My Portfolio</a></h1>
+
+            <ul>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h2>My Projects</h2>
+
+
+        <section class="project-grid">
+
+
+            <article class="project-card">
+
+                <h3>Star Pizza</h3>
+
+                <p>
+                    A simple pizza restaurant menu website.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> HTML
+                </p>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <h3>Pasta Primavera</h3>
+
+                <p>
+                    A simple Italian restaurant menu website.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> HTML and CSS
+                </p>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <h3>Introduction of Me</h3>
+
+                <p>
+                    A very simple personal website showcasing my interests and skills.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> HTML
+                </p>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <h3>EcoBottle</h3>
+
+                <p>
+                    A simple website for a startup that sells sustainable water bottles.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> HTML and CSS
+                </p>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h6>Copyright © 2026</h6>
+        <h6>362736@via.dk</h6>
+
+        <h6>Designed by Roseil Ali</h6>
+
+    </footer>
+
+
+</body>
+
+</html>

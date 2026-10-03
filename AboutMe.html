@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me - Personal CV and Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: times new roman, times, serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* HEADER */
+
+
+        header {
+            background-color: #439ccf;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav h1 a {
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .about {
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 60px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #439ccf;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .about h3 {
+            margin-top: 30px;
+        }
+
+
+        /* INTERESTS */
+
+        .interests {
+            padding-left: 20px;
+            line-height: 2;
+        }
+
+
+        /* PROFILE IMAGE */
+
+        .about img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #439ccf;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #439ccf;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 40px;
+            margin-top: auto;
+        }
+
+        footer h6 {
+
+            font-size: 13px;
+            list-style: none;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PHONE - 375px */
+        @media (max-width: 767px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+                gap: 30px;
+            }
+
+            .about img {
+                width: 160px;
+                height: 160px;
+            }
+
+            .about h2 {
+                font-size: 30px;
+            }
+
+            .about p {
+                font-size: 16px;
+            }
+
+            .interests {
+                list-style-position: inside;
+                padding-left: 0;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+
+        /* TABLET - 768px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            main {
+                padding: 50px 20px;
+            }
+
+            .about {
+                padding: 40px;
+                gap: 40px;
+            }
+
+            .about img {
+                width: 190px;
+                height: 190px;
+            }
+
+            .about h2 {
+                font-size: 34px;
+            }
+        }
+
+
+        /* DESKTOP - 1024px AND BIGGER */
+        @media (min-width: 1024px) {
+
+            main {
+                max-width: 1100px;
+                padding: 70px 20px;
+            }
+
+            .about {
+                flex-direction: row;
+                padding: 50px;
+                gap: 60px;
+            }
+
+            .about img {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h1><a href="APersonalCV&Portfolio.html">My Portfolio</a></h1>
+
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="about">
+
+            <div class="about-text">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Roseil Ali. I am 21 years old and Kurdish
+                    from Syria. I have been living in Denmark since 2016.
+                    I am currently studying Software Engineering at VIA University
+                    College in Horsens, Denmark.
+                </p>
+
+                <p>
+                    I enjoy learning new things and creating projects where I can
+                    improve my programming, design and problem-solving skills.
+                </p>
+
+                <h3>My Interests</h3>
+
+                <ul class="interests">
+                    <li>🎵 Listening to music</li>
+                    <li>🎬 Watching movies</li>
+                    <li>🎨 Drawing</li>
+                </ul>
+
+            </div>
+
+
+            <img src="Photos/Profile.jpg" alt="Profile picture of Roseil">
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h6>Copyright © 2026</h6>
+
+        <h6>362736@via.dk</h6>
+
+        <h6>Designed by Roseil Ali</h6>
+
+    </footer>
+
+
+</body>
+
+</html>

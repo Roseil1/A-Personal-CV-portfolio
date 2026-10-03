@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CV - Personal CV and Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Times New Roman, Times, serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #439ccf;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav h1 a {
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        main h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #439ccf;
+            margin-bottom: 30px;
+        }
+
+        /* CV INTRO */
+
+        .cv-intro {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-intro p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* CV SECTIONS */
+
+        .cv {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .cv-section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-section h3 {
+            color: #439ccf;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .cv-section ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .cv-section li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #439ccf;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 40px;
+            margin-top: auto;
+        }
+
+        footer h6 {
+
+            font-size: 13px;
+            list-style: none;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PHONE - 375px */
+        @media (max-width: 767px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            main h2 {
+                font-size: 30px;
+            }
+
+            .cv-intro {
+                padding: 20px;
+            }
+
+            .cv-intro p {
+                font-size: 16px;
+            }
+
+            .cv {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-section {
+                padding: 20px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+
+
+        /* TABLET - 768px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            main {
+                padding: 40px 20px;
+            }
+
+            .cv {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cv-intro {
+                padding: 25px;
+            }
+
+            .cv-section {
+                padding: 22px;
+            }
+        }
+
+
+        /* DESKTOP - 1024px AND BIGGER */
+        @media (min-width: 1024px) {
+
+            main {
+                max-width: 1100px;
+                padding: 60px 20px;
+            }
+
+            .cv {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .cv-section {
+                padding: 25px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1><a href="index.html">My Portfolio</a></h1>
+
+            <ul>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h2>CV</h2>
+
+
+        <section class="cv-intro">
+
+            <p>
+                I am a friendly, positive, and responsible employee with high energy
+                and a strong work ethic. I am flexible and reliable, keep my commitments,
+                and am willing to step in when needed. I work in a structured way,
+                can handle multiple tasks at the same time, and enjoy working in an
+                environment with varied responsibilities. I am motivated by learning
+                new things, taking responsibility, and facing new challenges.
+            </p>
+
+        </section>
+
+
+        <section class="cv">
+
+
+            <div class="cv-section">
+
+                <h3>Education</h3>
+
+                <ul>
+                    <li>
+                        High School Diploma - Horsens Gymnasium og HF
+                        (2022 - 2025)
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="cv-section">
+
+                <h3>Competences</h3>
+
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Fast Learner</li>
+                    <li>Problem Solving</li>
+                </ul>
+
+            </div>
+
+
+            <div class="cv-section">
+
+                <h3>Languages</h3>
+
+                <ul>
+                    <li>English</li>
+                    <li>Danish</li>
+                    <li>Kurdish</li>
+                    <li>Arabic</li>
+                    <li>Spanish</li>
+                </ul>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <h6>Copyright © 2026</h6>
+
+        <h6>362736@via.dk</h6>
+
+        <h6>Designed by Roseil Ali</h6>
+
+    </footer>
+
+</body>
+
+</html>
